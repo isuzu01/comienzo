@@ -26,5 +26,12 @@ ver el estado de mi proyecto en git
 git status
 ```
 
-----
+subir al repositorio github en linea 
+
+```
+git push -u origin master
+git push
+```
+
+---
 
