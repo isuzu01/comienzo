@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="tablestyle.css">
+        <title>tables</title>
+    </head>
+    <div class="container">
+        <table>
+            <h1>tables</h1>
+
+            <h2>simple <span class="spanclass"> table with </span>header </h2>
+            <table border="1">
+                <tr>
+                    <th>first name</th>
+                    <th>last name</th>
+                </tr>
+                <tr>
+                    <th>john</th>
+                    <th>smith</th>
+                </tr>
+                <tr>
+                    <th>jane</th>
+                    <th>smith</th>
+                </tr>
+            </table>
+
+            <h2>simple table with thead, tfoot and tbody</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>header content 1</th>
+                        <th>header content 2</th>
+                        <th>header content 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>body content 1</td>
+                        <td>body content 2</td>
+                        <td>body content 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>footer content 1</th>
+                        <th>footer content 2</th>
+                        <th>footer content 3</th>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <h2>simple with colgroup</h2>
+            <table>
+                <colgroup span="4"></colgroup>
+                <thead>
+                    <tr>
+                        <th>header content 1</th>
+                        <th>header content 2</th>
+                        <th>header content 3</th>
+                        <th>header content 4</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>content content 1</td>
+                    <td>content content 2</td>
+                    <td>content content 3</td>
+                    <td>content content 4</td>
+                </tr>
+                <tr>
+                    <td>content content 1</td>
+                    <td>content content 2</td>
+                    <td>content content 3</td>
+                    <td>content content 4</td>
+                </tr>
+            </table>
+
+            <h2>simple with colgroup and col</h2>
+            <table>
+                <colgroup>
+                    <col style="background-color: red">
+                    <col span="2">
+                </colgroup>
+                <tr>
+                    <th>Lime</th>
+                    <th>Lemon</th>
+                    <th>Orange</th>
+                </tr>
+                <tr>
+                    <th>red</th>
+                    <th>yellow</th>
+                    <th>Orange</th>
+                </tr>
+            </table>
+
+            <h2>simple table with caption</h2>
+            <table>
+                <caption>
+                    this is a caption
+                </caption>
+                <tr>
+                    <td>table caption</td>
+                </tr>
+            </table>            
+        </table>
+    </div>
+</html>

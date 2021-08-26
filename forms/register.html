@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/forms/registerStyle.css">
+    <title>register</title>
+</head>
+<body>
+    <h1>Create a New Account</h1>
+    <h2>register</h2>
+
+<form target="_blank" action="/forms/login.html" method="get">
+    
+
+        <label for="Name">First Name:</label>
+        <input id="Name" type="Name" name="Name" placeholder="John" required>
+    <br>
+        <label for="LastName">Last Name:</label>
+        <input id="LastName" type="LastName" name="LastName" placeholder="Smith" required>
+    <br>
+        <label for="date">Date of Birth:</label>
+        <input id="date" type="date" required>
+    <br>
+        <label for="Male">Male</label>
+        <input name="gender" id="Male" type="radio" value="Male" required> 
+        <label for="Female">Female</label>
+        <input name="gender" id="Female" type="radio" value="Female" required>
+        <label for="Other">Other</label>
+        <input name="gender" id="Other" type="radio" value="Other" required>
+    <br>
+        <label for="account-type">Account Type:</label>
+        <select name="account-type" id="selected-choise" required>
+            <option name="account-type" value="0" selected disabled>Account Type</option>
+            <option name="account-type" value="Administrator">Administrator</option>
+            <option name="account-type" value="Contributor">Contributor</option>
+            <option name="account-type" value="Visitor">Visitor</option>
+        </select>
+    <br>
+        <label for="email">e-mail:</label>
+        <input id="email" type="email" name="email" placeholder="your email" required>
+    <br>
+    <label for="password"> password: </label>
+    <input
+     id="password" type="password" name="password" placeholder="password" pattern=".{5,10}"
+     title="password min 5, max 10 characters"
+     required
+     />
+    <p>
+        <a href="/forms/terms&conditions.html" target="_blank">Terms & conditions</a>
+    </p>
+
+    <label for="agree">I agree the terms and conditions</label>
+    <input name="agree" type="checkbox" id="agree" required>
+
+    <br>
+        <input type="submit" value="submit">
+    
+</form>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+/**{
+}
+h1{
+    color: teal;
+}
+[href="register.html"]{
+    color: rgb(190, 58, 58);
+}
+
+
+h2{
+    color: rgb(156, 87, 18);
+}
+
+#Policy{
+    color: mediumvioletred;
+}
+.container-rrp{
+    background: rgb(172, 88, 88);
+}*/
+
+/*font-family*/
+
+*{
+    margin: 0;
+    font-family: arial;
+    font-size: 13px;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+
+/*font-size*/
+
+}
+h3 {
+    font-size: 1.5em;
+}
+
+/*font-weight*/
+
+h1{
+    font-weight: bolder;
+}
+
+/*line-height*/
+li{
+    line-height: 1.5em;
+}
+
+/*text-align*/
+h1 {
+    text-align: center;
+}
+
+/*front-decoration*/
+a {
+    text-decoration: none;
+}

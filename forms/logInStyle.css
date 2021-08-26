@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+:root{
+    --primary-color: #0a5a66;
+    --dark-color: #22202d;
+    --light-color: #f4f4f4;
+    --danger-color: #d30d2d;
+    --success-color: #2aaa50;
+}
+
+#login{
+    color: #fff;
+    padding: 5px;
+    background-color: #913854 ;
+    background-color: #13883a;
+    width: 280px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:15px;
+    box-shadow: 0 5px 14px rgb(0, 0, 0, 0.7);
+}
+h1{
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+}
+h2{
+    text-align: center;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+}
+div{
+    padding: 10px;
+}
+.logi,
+label{
+    color: black;
+}
+
+[value="log in"]{
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark-color);
+}

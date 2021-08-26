@@ -1,0 +1,17 @@
+  /*targeting in CSS*/
+
+        /*tag targeting in CSS*/
+
+        img {
+            width: 280px;
+        }
+
+        /*class targeting in CSS*/
+        .logo {
+            height: 250px;
+        }
+
+        /*id targeting in CSS*/
+        #firstimg {
+            border: crimson solid 5px;
+        }
