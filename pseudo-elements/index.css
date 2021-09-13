@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    height: 100%;
+    margin: 25%;
+    font-size: 3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* before and after*/
+h1::before{
+    content: 'Sup';
+    background: blue;
+
+    display: block;
+    font-size: 16px;
+    background: black;
+    color: white;
+}
+
+h1::after{
+    content: 'Nothing';
+    background: black;
+    color: white;
+
+    display: block;
+}
+
+h2 {
+    height: 100%;
+    margin: 25%;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h2::before{
+    /*content: url(//unsplash.it/100/100);*/
+    display: block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    text-shadow: none;
+    background: rgb(128, 121, 121);
+    width: 100%;
+    content: '';
+}
+
+h2::after{
+    /*content: url(//unsplash.it/100/100);*/
+    display: block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    text-shadow: none;
+    background: rgb(128, 121, 121);
+    width: 100%;
+    content: '';
+}
+
+p {
+    height: 100%;
+    margin: 25%;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+p::before{
+    content: open-quote;
+    color: rgb(72, 60, 58);
+    font-size: 3rem;
+}
+
+p::after{
+    content: close-quote;
+    color: rgb(72, 60, 58);
+    font-size: 3rem;
+}
