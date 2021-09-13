@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     font-family: 'Roboto', sans-serif;
-    margin: 0;
+    margin: 10px;
+
 }
 
 :root{
@@ -10,19 +10,20 @@
     --dark-color: #22202d;
     --light-color: #f4f4f4;
     --danger-color: #d30d2d;
-    --success-color: #2aaa50;
+    --success-color: #2aaa64;
+    --shadow: 0 5px 14px rgb(0, 0, 0, 0.7);
 }
 
 #login{
     color: #fff;
     padding: 5px;;
-    background-color: #13883a;
+    background-color: #bb233f;
     width: 280px;
     margin: 0 auto;
     position: relative;
     border: 2px solid rgb(255, 255, 255);
     border-radius:15px;
-    box-shadow: 0 5px 14px rgb(0, 0, 0, 0.7);
+    box-shadow: var(--shadow)
 }
 h1{
     text-align: center;
@@ -36,8 +37,12 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--dark-color);
 }
+h1:hover{
+    box-shadow: var(--shadow);
+}
+
 div{
-    padding: 10px;
+    padding: 5px;
 }
 .logi,
 label{
@@ -50,4 +55,29 @@ label{
     font-size: 1rem;
     font-weight: bold;
     color: var(--dark-color);
+    /*box-shadow: var(--shadow)*/
+}
+input[type="submit"]{
+    padding: 10px auto;
+    background: rgb(135, 105, 66);
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.btn:hover{
+    box-shadow: var(--shadow);
+    background: var(--success-color);
+}
+
+.btn-login{
+    display: flex;
+}
+.email:hover,.password:hover{
+    background-color: var(--dark-color);
+}
+
+/* focus */
+
+input:focus {
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }

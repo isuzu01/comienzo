@@ -50,6 +50,7 @@ h1{
 /*line-height*/
 li{
     line-height: 1.5em;
+    background-color: coral;
 }
 
 /*text-align*/
