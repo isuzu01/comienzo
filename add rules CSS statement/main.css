@@ -1,0 +1,93 @@
+/* --------- @import ---------- */
+
+/* to import style from some place else */
+
+
+@import"_config.css";
+
+h1 {
+    color : var(--color-prim);
+    font-size: var(--mf);
+    box-shadow: var(--shadow);
+}
+h2 {
+    color: var(--color-sec);
+    font-size: var(--sf);
+}
+.container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 200px 300px;
+    gap: 1rem;
+}
+.container > div {
+    box-shadow: var(--shadow);
+}
+.container > div:nth-child(odd) {
+    color: var(--color-sec);
+    background-color: var(--bg-d);
+}
+.nested {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.3rem;
+}
+.nested div {
+    background-color: var(--bg-d);
+    color: var(--color-sec);
+    border: 1px solid rgb(60, 128, 121);
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+/* -------------- @media -------------- */
+
+/* to rearrange itself - to fit the screen */
+
+@media(max-width: 900px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .nested {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .nested div {
+        background-color: var(--bg-l);
+        color: var(--color-prim);
+        
+    }
+    .container div {
+        animation: grandma 2s ease-in-out 0s infinite;
+        animation: grandma 2s ease-in-out 0s infinite;
+    }
+    
+    @keyframes grandma{
+        from{
+            height: 0%;
+        }
+        to{
+            height: 100%;
+        }
+    }
+    
+}
+
+/* --------------- @keyframes ----------------- */
+
+/* describe the aspect of intermediate steps in a css animations sequence */
+
+/* .container div {
+    animation: grandma 2s ease-in-out 0s infinite;
+    animation: grandma 2s ease-in-out 0s infinite;
+}
+
+@keyframes grandma{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+ */
